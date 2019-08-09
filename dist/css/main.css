@@ -115,7 +115,10 @@
     .menu-branding .portrait {
       background: url("../img/portrait_small.jpg");
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -200,6 +203,35 @@ main {
 .bio {
   grid-area: bio;
   font-size: 1.5rem; }
+
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px white solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: black;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: black;
+    color: white; }
+
+.btn-dark {
+  background: black;
+  color: white; }
+
+.btn-light {
+  background: #80ffff;
+  color: white; }
 
 #main-footer {
   text-align: center;
