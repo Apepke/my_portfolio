@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 body {
   @include background;
@@ -52,7 +53,7 @@ main {
       padding: 0.4rem;
       &:hover {
         color: $secondary-color;
-        @include easeOut();
+        @include easeOut;
       }
     }
     &#home {
