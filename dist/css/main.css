@@ -90,6 +90,14 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -118,11 +126,15 @@
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: repeat(1fr); } }
 
 body {
   background: teal;
@@ -215,6 +227,25 @@ main {
       opacity: 0.5;
       border-color: black;
       transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: black;
+      color: white; }
+      .boxes div:hover span {
+        color: white; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
