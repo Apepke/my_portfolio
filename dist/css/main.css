@@ -219,6 +219,13 @@ h3.sm-heading {
   padding: 0.2rem 1rem;
   background: rgba(0, 138, 138, 0.5);
 }
+h1.menu-heading {
+  color: white;
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(12, 136, 109, 0.911);
+  border: 4px solid black;
+}
 
 a {
   color: white;
