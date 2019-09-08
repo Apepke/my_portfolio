@@ -210,13 +210,14 @@ h3 {
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
-  font-size: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
+  margin-bottom: 0rem;
+  padding: 0.2rem 0rem;
   background: rgba(0, 138, 138, 0.5);
 }
 h1.menu-heading {
@@ -247,7 +248,7 @@ main {
   height: 100%;
 }
 main .icons {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 main .icons a {
   padding: 0.4rem;
@@ -260,7 +261,7 @@ main .icons#home {
   overflow: hidden;
 }
 main .icons#home h1 {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .about-info {
@@ -341,7 +342,7 @@ main .icons#home h1 {
 }
 
 .btn-light {
-  background: #80ffff;
+  background: #094141;
   color: white;
 }
 
