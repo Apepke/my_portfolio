@@ -188,6 +188,7 @@ body {
 body#bg-img {
   background: url("../img/background.jpg");
   background-attachment: fixed;
+  background-repeat: repeat;
   background-size: cover;
 }
 body#bg-img:after {
