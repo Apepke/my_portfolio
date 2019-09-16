@@ -50,7 +50,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #006767;
+  background: rgba(68, 133, 255, 0.9);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -59,7 +59,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: teal;
+  background: rgba(68, 133, 255, 0.9);
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -178,7 +178,7 @@
 }
 
 body {
-  background: teal;
+  background: rgba(32, 97, 219, 0.9);
   color: set-textcolor(teal);
   height: 100%;
   margin: 0;
@@ -199,7 +199,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(0, 128, 128, 0.9);
+  background: rgba(68, 133, 255, 0.9);
 }
 
 h1,
@@ -213,24 +213,26 @@ h2.lg-heading,
 h3.lg-heading {
   font-size: 2rem;
   font-weight: bold;
+  color: black;
 }
 h1.sm-heading {
   margin-bottom: 0rem;
   padding: 0.2rem 0rem;
-  background: rgba(0, 138, 138, 0.5);
-  color: gold;
+  font-weight: bold;
+  color: black;
 }
 h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 0rem;
   padding: 0.2rem 0rem;
-  background: rgba(0, 138, 138, 0.5);
+  color: black;
+  background: rgb(65, 131, 255);
 }
 h1.menu-heading {
   color: white;
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(12, 136, 109, 0.911);
+  background: rgba(68, 133, 255, 0.9);
   border: 4px solid black;
 }
 
@@ -250,7 +252,7 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 1rem;
   height: 100%;
 }
 main .icons {
@@ -293,6 +295,12 @@ main .icons#home h1 {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+.project-description {
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: white;
 }
 .projects img {
   width: 100%;
@@ -355,7 +363,7 @@ main .icons#home h1 {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #004d4d;
+  background: rgba(68, 133, 255, 0.9);
   color: white;
   height: 60px;
 }
