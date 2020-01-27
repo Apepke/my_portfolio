@@ -306,7 +306,7 @@ main .icons#home h1 {
   height: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   body#bg-img:after {
     width: 100%;
     height: 200%;
@@ -314,10 +314,11 @@ main .icons#home h1 {
   .projects {
     display: grid;
     grid-gap: 20px;
+    width: 75%;
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 801px) and (max-width: 1170px) {
   .projects {
     display: grid;
     grid-gap: 20px;
