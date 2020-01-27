@@ -113,10 +113,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s;
 }
-.item {
-  width: 400px;
-  padding: 20px;
-}
 
 body {
   background: rgba(32, 97, 219, 0.9);
@@ -140,15 +136,8 @@ body#bg-img:after {
   right: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
   z-index: -1;
   background: rgba(68, 133, 255, 0.9);
-}
-@media screen and (max-width: 768px) {
-  body#bg-img:after {
-    width: 100%;
-    height: 200%;
-  }
 }
 
 h1,
@@ -241,8 +230,9 @@ main .icons#home h1 {
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .project-description {
   padding: 10px;
@@ -314,4 +304,23 @@ main .icons#home h1 {
   background: rgba(68, 133, 255, 0.9);
   color: white;
   height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  body#bg-img:after {
+    width: 100%;
+    height: 200%;
+  }
+  .projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
