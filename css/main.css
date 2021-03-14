@@ -1,4 +1,4 @@
-.menu-btn {
+menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
@@ -172,6 +172,10 @@ h1.menu-heading {
   padding: 0.2rem 1rem;
   background: rgba(68, 133, 255, 0.9);
   border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -242,6 +246,7 @@ main .icons#home h1 {
 }
 .projects img {
   width: 100%;
+  height:250px;
   border: 3px white solid;
 }
 .projects img:hover {
@@ -317,11 +322,13 @@ main .icons#home h1 {
     width: 75%;
     grid-template-columns: repeat(1, 1fr);
   }
+  h2.sm-heading {
+    width:50%;
+  }
 }
 @media screen and (min-width: 801px) and (max-width: 1170px) {
   .projects {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap:wrap;
   }
 }
